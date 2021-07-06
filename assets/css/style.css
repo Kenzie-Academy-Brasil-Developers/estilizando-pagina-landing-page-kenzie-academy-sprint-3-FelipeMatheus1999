@@ -29,7 +29,9 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    --font-main: Montserrat;
+}
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
@@ -54,6 +56,10 @@ div.large-container{
     width: 100%;
     max-width: 1170px;
     margin:0 auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 div.container{
     width: 100%;
@@ -61,17 +67,134 @@ div.container{
     margin:0 auto;
 }
 /* GERAL */
-  
+
 /* HTML */
 html{}
 /* HTML */
-  
+
 /* BODY */
-body{}
+body{
+    width: 100vw;
+    height: 100vh;
+}
 /* BODY */
-  
+
 /* HEADER */
-header{}
+header{
+    width: 100vw;
+    height: 12vh;
+    margin-top: 90px;
+    background: #00043e;
+}
+
+.logo {
+    width: 17%;
+}
+
+summary {
+    list-style: none;
+}
+
+.secaoDestaque {
+    background: #00043e;
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.secaoDestaque h2 {
+    font-family: var(--font-main);
+    color: #fff;
+    width: 80%;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.secaoDestaque p {
+    font-family: var(--font-main);
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+.secaoDestaqueFormulario {
+    margin-top: 20px;
+    display: flex;
+    
+}
+
+.secaoDestaqueFormulario input {
+    background: #fff;
+    color: #818181;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+    width: 160px;
+    height: 30px;
+    padding: 10px;
+}
+
+.secaoDestaqueFormulario button {
+    background: #007aff;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 95px;
+    height: 30px;
+}
+
+.flex-col {   
+    width: 100vw;
+    height: 100vh;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-col h2 {
+    color: #303030;
+    font-family: Lato;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.flex-col p {
+    color: #303030;
+    font-family: Lato;
+    font-size: 18px;
+    text-align: start;
+    margin: 25px 0 45px 0;
+    padding: 10px;
+}
+
+.flex-col span {
+    color: #818181;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding: 10px;
+    outline: 5px;
+}
+
+.flex-col button {
+    color: #303030;
+    border:1px solid #ccd2d8;
+    border-radius: 5px;
+    background: #fff;
+    width: 210px;
+    height: 50px;
+    margin: 40px 0 0 10px;
+    font-size: 16px;
+    padding: 10px;
+}
+
 /* HEADER */
   
 /* FOOTER */
