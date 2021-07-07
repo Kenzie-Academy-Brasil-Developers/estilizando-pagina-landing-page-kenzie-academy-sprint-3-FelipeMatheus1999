@@ -42,7 +42,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     list-style: none;
 }
 img{
-    max-width: 800px;
+    max-width: 200px;
 }
 div.flex{
     display: flex;
@@ -76,15 +76,20 @@ html{}
 body{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 /* BODY */
 
 /* HEADER */
 header{
-    width: 100vw;
-    height: 12vh;
+    width: 100%;
+    height: 12%;
     margin-top: 90px;
     background: #00043e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo {
@@ -97,8 +102,8 @@ summary {
 
 .secaoDestaque {
     background: #00043e;
-    width: 100vw;
-    height: 40vh;
+    width: 100%;
+    height: 5%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -139,7 +144,9 @@ summary {
     height: 30px;
     padding: 10px;
 }
-
+.fa-bars {
+    border:#fff;
+}
 .secaoDestaqueFormulario button {
     background: #007aff;
     color: #fff;
@@ -150,12 +157,16 @@ summary {
     height: 30px;
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .flex-col {   
     width: 100vw;
     height: 100vh;
     padding: 60px;
-    display: flex;
-    flex-direction: column;
 }
 
 .flex-col h2 {
@@ -195,6 +206,123 @@ summary {
     padding: 10px;
 }
 
+.flex-col--python {
+    margin-top: 60px;
+}
+
+.flex-col--JS {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.flex-col--JS img {
+    width: 50%;
+}
+
+.flex-col-tilteJS {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.secaoCalendar {
+    padding: 2.5em;
+    text-align: center;
+}
+
+.secaoCalendar h2{
+    color: #303030;
+    font-family: Lato;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.secaoCalendarParagraph{
+    color: #303030;
+    font-family: Lato;
+    font-size: 18px;
+    padding: 1.5em;
+    margin-bottom: 30px;
+}
+
+.calendario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendario li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #242979;
+    width: 220px;
+    height: 560px;
+    margin-bottom: 60px;
+}
+
+.calendario-data {
+    background: #00043e;
+    color: #fff;
+    font-size: 2.2em;
+    padding: 35px 66px 35px 66px;
+}
+
+
+.calendario h3 {
+    color: #303030;
+    width: 100%;
+    font-size: 1.1em;
+    font-family: Lato;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.calendario p {
+    color: #808080;
+    border-bottom:1px solid #e1e4e9;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    padding: 20px 15px 20px 15px;
+}
+
+.calendario-data-rodape {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendario-data-rodape {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendario-data-rodape span {
+    color: #808080;
+    font-size: 32px;
+    font-family: lato;
+    margin-bottom: 20px;
+}
+
+.calendario-data-rodape button {
+    background: #007aff;
+    color: #fff;
+    width: 180px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 12px;
+}
+
+
 /* HEADER */
   
 /* FOOTER */
@@ -203,6 +331,8 @@ footer{}
 
 /* INICIAL */
 main{}
+
+
 /* INICIAL */
 
 /* EXTRAS */
