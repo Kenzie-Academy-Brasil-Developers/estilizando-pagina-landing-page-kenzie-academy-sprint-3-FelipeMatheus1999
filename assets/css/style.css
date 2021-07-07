@@ -135,6 +135,23 @@ summary {
     
 }
 
+.secaoCursos{
+    text-align: center;
+}
+.secaoCursos__subTitle{
+    color: #303030;
+    font-weight: bolder;    
+}
+.secaoCursos img{
+    max-width: 100px;
+    padding: 10px;
+}
+.secaoCursos p{
+    color: #808080;
+    font-size: 0.8rem;
+    line-height: 20px;
+    padding: 20px;
+}
 .secaoDestaqueFormulario input {
     background: #fff;
     color: #818181;
@@ -232,13 +249,6 @@ summary {
     padding: 40px 20px 0 50px;
     list-style: initial;
 }
-
-
-
-
-
-
-
 
 .secaoCalendar {
     padding: 2.5em;
