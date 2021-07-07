@@ -255,8 +255,8 @@ summary {
 .secaoCalendarParagraph{
     color: #303030;
     font-family: Lato;
-    font-size: 18px;
-    padding: 1.5em;
+    font-size: 1.2rem;
+    padding: 20px;
     margin-bottom: 30px;
 }
 
@@ -316,7 +316,7 @@ summary {
 
 .calendario-data-rodape span {
     color: #808080;
-    font-size: 32px;
+    font-size: 2rem;
     font-family: lato;
     margin-bottom: 20px;
 }
@@ -327,7 +327,7 @@ summary {
     width: 180px;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 20px;
     padding: 12px;
 }
