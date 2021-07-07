@@ -40,7 +40,6 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     box-sizing: border-box;
     font-family: sans-serif;
     list-style: none;
-    overflow-x: hidden;
 }
 
 
@@ -84,6 +83,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 /* BODY */
 
