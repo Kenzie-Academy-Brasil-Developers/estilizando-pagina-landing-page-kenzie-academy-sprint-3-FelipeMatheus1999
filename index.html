@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Landing Page Kenzie Academy</title>
 </head>
@@ -20,16 +19,19 @@
         <figcaption>Kenzie Academy</figcaption>  
       </figure>
 
+      <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <!-- MENU DE NAVEGAÇÃO -->
       <nav>
-        <details>
-          <summary><i class="fas fa-bars"></i></summary>
-          <ul>
-            <li><a href="#1">Sobre a Kenzie</a></li>
-            <li><a href="#2">Agenda</a></li>
-            <li><a href="#3">Contato</a></li>
-          </ul>
-        </details>
+        <ul>
+          <li><a href="#1" style="text-decoration:none">Sobre a Kenzie</a></li>
+          <li><a href="#2" style="text-decoration:none">Agenda</a></li>
+          <li><a href="#3" style="text-decoration:none">Contato</a></li>
+        </ul>
       </nav>
     </div>
 
@@ -58,7 +60,7 @@
       <article class="flex">
         
         <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
+        <div class="flex-col--left">
 
           <h2 class="flex-col--title">LOREM IPSUM DOLOR SIT PYTHON</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam temporibus, maiores dolores molestias cupiditate maxime repudiandae sunt voluptatibus commodi tenetur dolorum ipsa sequi.
@@ -71,7 +73,7 @@
         </div>
 
         <!-- COLUNA DIREITA -->
-        <div class="flex-col--python">
+        <div class="flex-col--right">
 
           <figure>
             <img src="assets/img/python.png" alt="python">
@@ -81,7 +83,7 @@
         </div>
 
         <!-- COLUNA ESQUERDA -->
-        <div class="flex-col--JS">
+        <div class="flex-col--left">
 
             <figure>
               <img src="assets/img/JavaScript-logo.png" alt="Java Script">
@@ -91,9 +93,9 @@
           </div>
 
         <!-- COLUNA DIREITA -->
-        <div class="flex-col">
+        <div class="flex-col--right">
 
-            <h2 class="flex-col-titleJS"> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
+            <h2 class="flex-col--titleJS"> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
             <ul>
                 <li>The standard Lorem Ipsum passage, used since the 1500s</li>
                 <li>Section 1.10.32 of "de Finibus Bonorum et Malorum" by Cicero in 45 BC</li>

@@ -58,7 +58,6 @@ div.full-container{
 }
 div.large-container{
     width: 100%;
-    max-width: 1170px;
     margin:0 auto;
     padding: 15px;
     display: flex;
@@ -87,19 +86,22 @@ body{
 /* BODY */
 
 /* HEADER */
-header{
+.topo {
     width: 100%;
     height: 10%;
     margin-top: 90px;
-    background: #00043e;  
+    background: #00043e;
+}
+
+
+a {
+    color: #fff;
+    letter-spacing: 2px;
 }
 
 .logo {
-    width: 17%;
-}
-
-summary {
-    list-style: none;
+    width: 60px;
+    z-index: 1;
 }
 
 .secaoDestaque {
@@ -107,7 +109,6 @@ summary {
     width: 100%;
     height: 5%;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 }
@@ -119,6 +120,7 @@ summary {
     font-size: 32px;
     font-weight: 400;
     text-align: center;
+    margin-top: 10px;
 }
 
 .secaoDestaque p {
@@ -163,10 +165,13 @@ summary {
     justify-content: center;
 }
 
-.flex-col {   
+.flex-col--left {   
     width: 100%;
     height: 100%;
-    padding: 0px 60px 40px 60px;
+    padding: 0px 60px 0 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .flex-col--title {
@@ -174,10 +179,11 @@ summary {
     font-family: Lato;
     font-size: 22px;
     margin-top: 60px;
-    padding: 10px;
+    padding: 40px 10px 0 10px;
+    text-align: start;
 }
 
-.flex-col p {
+.flex-col--left p {
     color: #303030;
     font-family: Lato;
     font-size: 18px;
@@ -186,59 +192,53 @@ summary {
     padding: 10px;
 }
 
-.flex-col span {
+.flex-col--left span {
     color: #818181;
     font-size: 14px;
-    letter-spacing: 1px;
+    padding:  10px;
     line-height: 25px;
+    margin: 0 4px 0 0;
+    padding: 0 0 0 10px;
+    text-align: start;
 }
 
-.flex-col button {
+.flex-col--left button {
     color: #303030;
     border:1px solid #ccd2d8;
     border-radius: 5px;
     background: #fff;
     width: 210px;
     height: 50px;
-    margin: 40px 0 0 10px;
-    font-size: 16px;
+    margin: 40px 0 40px 10px;
+    font-size: 1rem;
     padding: 10px;
 }
 
-.flex-col--python {
+.flex-col--right {
     margin: 0 0 120px 0;
 }
 
-.flex-col--JS {
-    text-align: center;
-}
-
-.flex-col--JS img {
+.flex-col--left img {
     width: 50%;
+    
 }
 
-.flex-col-titleJS {
+.flex-col--titleJS {
     color: #303030;
     font-family: Lato;
     font-size: 1.5rem;
-    padding: 10px;
+    padding: 0 60px 0 60px;
     text-align: center;
 }
 
-.flex-col ul {
+.flex-col--right ul {
     color: #808080;
     font-size: 0.8rem;
     line-height: 25px;
-    padding: 40px 20px 0 50px;
+    padding: 40px 90px 20px 100px;
     list-style: initial;
+    text-align: start;
 }
-
-
-
-
-
-
-
 
 .secaoCalendar {
     padding: 2.5em;
@@ -348,19 +348,134 @@ main{}
 /* EXTRAS */
 
 /* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
 
 /* EXTRAS */
-  
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
-    @media screen and (min-width: 800px) {}
-/* MEDIA QUERIES */
+@media screen and (min-width: 400px) {
+    .flex-col--left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .flex-col--left button {
+        margin: 0 auto;
+    }
+
+@media screen and (min-width: 800px) { 
+    img {
+        max-width: 500px;
+    }
+
+    .large-container {
+        position: fixed;
+        top: 0;
+        background: #00043eee;
+        backdrop-filter: blur(6px);
+    }
+
+    .large-container ul {
+        width: 300px;
+        font-size: 13px;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 300px;
+    }
+
+    .secaoDestaque {
+        height: 20%;
+        background-image: url(../img/background-destaque.webp);
+    }
+
+    .secaoDestaque h2 {
+        font-size: 63px;
+    }
+
+    .secaoDestaque p {
+        font-size: 21px;
+    }
+
+    .secaoDestaque input {
+        width: 460px;
+    }
+
+    .secaoDestaque button {
+        width: 100px;
+        font-size:14px
+    }
+
+    .flex {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .flex-col--left {
+        font-size: 24px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .flex-col--left span {
+        text-align: start;
+        padding: 0 0 0 10px;
+    }
+
+    .flex-col--left button {
+        margin: 20px 40px 0 0;
+    }
+
+    .flex-col--left figure img{
+        width: 40%;
+        display: flex;
+    }
+
+    
+    .flex-col--titleJS {
+        margin-top: 100px;
+    }
+    .flex-col--right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .flex-col--right figure img {
+        width: 400px;
+        margin-top: 100px;
+    }
+
+
+    .secaoCalendar {
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+
+    .calendario {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+
+@media screen and (min-width: 1150px) { 
+    .calendario li {
+        width: 300px;
+    }
+    
+    .calendario-data {
+        width: 4.8em;
+    }
+
+    .calendario-data-rodape button {
+        width: 100px;
+    }
+}
