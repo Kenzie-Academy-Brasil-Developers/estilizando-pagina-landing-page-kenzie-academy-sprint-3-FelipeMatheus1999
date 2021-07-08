@@ -91,7 +91,7 @@
           </div>
 
         <!-- COLUNA DIREITA -->
-        <div class="flex-col">
+        <div class="flex-col" id="flex-col-right">
 
             <h2 class="flex-col-titleJS"> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
             <ul>
@@ -110,10 +110,10 @@
     <!-- SEÇÃO CURSOS -->
     <section class="secaoCursos">
 
-      <article>
+      <article class="secaoCursos__article">
 
         <h2>COURSES</h2>
-        <p>What we offer</p>
+        <p class="secaoCursos__subTitle">What we offer</p>
 
         <!-- LISTA DE CURSOS -->
         <ul>
@@ -204,19 +204,26 @@
 
     <section class="secaoContato">
 
-      <div class="flex">
+      <div class="flex__secaoContato__divContainer">
 
         <!-- COLUNA LADO ESQUERDO -->
-        <div class="flex-col">
+        <div class="flex-col__secaoContato__columnLeft">
           
           <div class="secaoContato-informacoes">
           
             <p>Contact us and we'll get back to you within 24 hours.</p>
             
             <ul>
-              <li><a href="#">Chicago, US</a> </li>
-              <li><a href="tel:001515151515">+00 1515151515</a></li>
-              <li><a href="malito:myemail@something.com">myemail@something.com</a></li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="#">Chicago, US</a>
+              </li>
+              <li>
+                <i class="fas fa-mobile-alt"></i>
+                <a href="tel:001515151515">+00 1515151515</a></li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="malito:myemail@something.com">myemail@something.com</a></li>
             </ul>
 
           </div>
@@ -224,25 +231,25 @@
         </div>
 
         <!-- COLUNA LADO DIRETO -->
-        <div class="flex-col">
+        <div class="flex-col__secaoContato__columnRight">
           
           <h2>Contact</h2>
           
           <form action="">
 
             <div class="form-input-model">
-              <label for="nome">Nome</label>
+              <label for="nome"></label>
               <input type="text" placeholder="Name" id="nome" name="nome">
             </div>
 
             <div class="form-input-model">
-              <label for="email">E-mail</label>
+              <label for="email"></label>
               <input type="text" placeholder="E-mail" id="email" name="email">
             </div>
 
             <div class="form-input-model">
-              <label for="mensagem">E-mail</label>
-              <textarea name="mensagem" id="mensagem"></textarea>
+              <label for="mensagem"></label>
+              <textarea type="text" placeholder="Comment" name="mensagem" id="mensagem" rows="6" cols="40" ></textarea>
             </div>
 
             <input type="submit" value="Send">

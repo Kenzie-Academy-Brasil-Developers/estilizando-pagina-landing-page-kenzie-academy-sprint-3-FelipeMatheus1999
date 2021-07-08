@@ -44,7 +44,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
 }
 
 img{
-    max-width: 200px;
+    max-width: 340px;
 }
 
 figcaption {
@@ -89,7 +89,6 @@ body{
 /* HEADER */
 header{
     width: 100%;
-    height: 10%;
     margin-top: 90px;
     background: #00043e;  
 }
@@ -105,27 +104,27 @@ summary {
 .secaoDestaque {
     background: #00043e;
     width: 100%;
-    height: 5%;
+    height: 8%;
     display: flex;
-    justify-content: flex-start;
+    justify-content:start;
     align-items: center;
     flex-direction: column;
 }
 
 .secaoDestaque h2 {
     font-family: var(--font-main);
-    color: #fff;
-    width: 80%;
-    font-size: 32px;
+    color: lightgray;
+    width: 60%;
+    font-size: 2.5rem;
     font-weight: 400;
     text-align: center;
+    padding: 10px;
 }
 
-.secaoDestaque p {
+.secaoDestaque.p {
     font-family: var(--font-main);
-    color: #fff;
-    font-size: 20px;
-    margin-top: 10px;
+    color: lightgray;
+    padding: 10px;
 }
 
 
@@ -135,6 +134,28 @@ summary {
     
 }
 
+.secaoCursos{
+    text-align: center;
+}
+.secaoCursos h2{
+    padding-top: 80px;
+    font-size: 1.7rem;
+}
+.secaoCursos__subTitle{
+    color: #303030;
+    font-weight: 500;  
+    font-size: 1.4rem; 
+}
+.secaoCursos img{
+    max-width: 100px;
+    padding: 10px;
+}
+.secaoCursos p{
+    color: #808080;
+    line-height: 20px;
+    padding: 20px;
+    text-align: center;
+}
 .secaoDestaqueFormulario input {
     background: #fff;
     color: #818181;
@@ -191,6 +212,7 @@ summary {
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 25px;
+    align-self: center;
 }
 
 .flex-col button {
@@ -200,7 +222,7 @@ summary {
     background: #fff;
     width: 210px;
     height: 50px;
-    margin: 40px 0 0 10px;
+    margin: 40px 0 0 30%;
     font-size: 16px;
     padding: 10px;
 }
@@ -211,10 +233,16 @@ summary {
 
 .flex-col--JS {
     text-align: center;
+    width: 100%;
+    background-color: #FAFAFA;
 }
 
 .flex-col--JS img {
-    width: 50%;
+    
+    width: 25%;
+}
+#flex-col-right{
+    background-color: #FAFAFA;
 }
 
 .flex-col-titleJS {
@@ -232,13 +260,6 @@ summary {
     padding: 40px 20px 0 50px;
     list-style: initial;
 }
-
-
-
-
-
-
-
 
 .secaoCalendar {
     padding: 2.5em;
@@ -315,7 +336,7 @@ summary {
 }
 
 .calendario-data-rodape span {
-    color: #808080;
+    color: #818181;
     font-size: 2rem;
     font-family: lato;
     margin-bottom: 20px;
@@ -331,7 +352,36 @@ summary {
     margin-bottom: 20px;
     padding: 12px;
 }
+.secaoContato{
+    background-color: #FAFAFA;
+    height: 500px;
+    text-align: center;
+    padding: 80px;
+}
 
+.secaoContatoul, a, p{
+    list-style:none;
+    text-decoration: none;
+    color: #818181;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: left;
+    height: 50%;
+}
+.flex-col__secaoContato__columnLeft li{
+    padding: 5px;
+    opacity:var(--font-main);
+
+}
+
+.flex-col__secaoContato__columnRight h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.flex-col__secaoContato__columnRight form, label,input{
+    
+    
+}
 
 /* HEADER */
   
