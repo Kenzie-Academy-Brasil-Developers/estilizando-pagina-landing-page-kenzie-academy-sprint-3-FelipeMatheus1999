@@ -413,7 +413,7 @@ footer{
     margin-top: 15rem;
     display: flex;
     align-self: center;
-    
+    text-align: center;
 }
 
 footer>p{
@@ -422,17 +422,20 @@ footer>p{
     color:white
 }
 footer>p>a{
-    color:white;
+    font-size: 30px;
+    color: white;
 }
 
 #footer__anchor{
-    color: blue;
-    size:10px;
+    color: #007aff;
+    size: 10px;
+    padding-top: 10%;
+    padding-left: 10%;
 }
 /* FOOTER */
 
 /* INICIAL */
-main{}
+
 
 
 /* INICIAL */
@@ -452,7 +455,16 @@ main{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
+    @media screen and (min-width: 400px) {
+        .secaoCursos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-grow: 1 1 auto;
+            width: 100%;
+            max-width: 95vw;
+        }
+    }
+
     @media screen and (min-width: 800px) {}
 /* MEDIA QUERIES */
