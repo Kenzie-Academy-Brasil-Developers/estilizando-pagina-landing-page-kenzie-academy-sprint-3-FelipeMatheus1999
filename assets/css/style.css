@@ -228,10 +228,17 @@ summary {
 
 .flex-col--JS {
     text-align: center;
+    width: 100%;
+    background-color: #FAFAFA;
 }
 
 .flex-col--JS img {
-    width: 50%;
+    
+    width: 25%;
+}
+
+#flex-col-right{
+    background-color: #FAFAFA;
 }
 
 .flex-col-titleJS {
@@ -325,7 +332,7 @@ summary {
 }
 
 .calendario-data-rodape span {
-    color: #808080;
+    color: #818181;
     font-size: 2rem;
     font-family: lato;
     margin-bottom: 20px;
@@ -341,7 +348,19 @@ summary {
     margin-bottom: 20px;
     padding: 12px;
 }
-
+.secaoContato{
+    background-color: #FAFAFA;
+}
+.secaoContato h2{
+    position: relative;
+    left: 38%;
+}
+.secaoContato ul, a{
+    list-style:none;
+    text-decoration: none;
+    color: #818181;
+    padding: 3px;
+}
 
 /* HEADER */
   
