@@ -148,6 +148,10 @@ a {
     padding: 10px;
 }
 
+.secaoDestaqueFormulario input:focus {
+    background-color: #e9dcdc;
+} 
+
 .secaoDestaqueFormulario button {
     background: #007aff;
     color: #fff;
@@ -156,6 +160,11 @@ a {
     border-bottom-right-radius: 3px;
     width: 95px;
     height: 30px;
+}
+
+.secaoDestaqueFormulario button:hover {
+    background-color: #00043e;
+    cursor: pointer;
 }
 
 .flex {
@@ -197,7 +206,7 @@ a {
     font-size: 14px;
     padding:  10px;
     line-height: 25px;
-    margin: 0 4px 0 0;
+    margin: 0 4px 40px 0;
     padding: 0 0 0 10px;
     text-align: start;
 }
@@ -209,13 +218,16 @@ a {
     background: #fff;
     width: 210px;
     height: 50px;
-    margin: 40px 0 40px 10px;
+    margin: 0 auto;
     font-size: 1rem;
-    padding: 10px;
+}
+
+.flex-col--left button:hover {
+    cursor: pointer;
 }
 
 .flex-col--right {
-    margin: 0 0 120px 0;
+    margin: 40px 0 120px 0;
 }
 
 .flex-col--left img {
@@ -332,6 +344,11 @@ a {
     padding: 12px;
 }
 
+.calendario-data-rodape button:hover {
+    background: #00043e;
+    text-transform: uppercase;
+}
+
 
 /* HEADER */
   
@@ -369,6 +386,10 @@ main{}
     img {
         max-width: 500px;
     }
+    
+    nav a:hover {
+        color: #020527;
+    }
 
     .large-container {
         position: fixed;
@@ -382,7 +403,7 @@ main{}
         font-size: 13px;
         display: flex;
         justify-content: space-between;
-        margin-right: 300px;
+        margin-right: 5rem;
     }
 
     .secaoDestaque {
@@ -404,7 +425,7 @@ main{}
 
     .secaoDestaque button {
         width: 100px;
-        font-size:14px
+        font-size:14px;
     }
 
     .flex {
@@ -415,15 +436,23 @@ main{}
     }
 
     .flex-col--left {
-        font-size: 24px;
         width: 50%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
+    .flex-col--title {
+        font-size: 24px;
+    }
+
+    .flex-col--left p {
+        font-size: 19px;
+    }
+
     .flex-col--left span {
         text-align: start;
+        font-size: 15px;
         padding: 0 0 0 10px;
     }
 
@@ -465,6 +494,21 @@ main{}
         margin: 0 auto;
     }
 
+    .calendario span {
+        font-size: 36px;
+    }
+
+    .calendario h3 {
+        font-size: 19px;
+    }
+
+    .calendario p {
+        font-size: 15px;
+    }
+
+    .calendario-data-rodape span {
+        font-size: 32px;
+    }
 
 @media screen and (min-width: 1150px) { 
     .calendario li {
