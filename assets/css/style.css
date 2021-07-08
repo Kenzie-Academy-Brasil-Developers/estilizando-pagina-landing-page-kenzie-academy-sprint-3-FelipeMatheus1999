@@ -449,6 +449,7 @@ main{}
 
     .flex-col--left p {
         font-size: 19px;
+        padding: 10px;
     }
 
     .flex-col--left span {
