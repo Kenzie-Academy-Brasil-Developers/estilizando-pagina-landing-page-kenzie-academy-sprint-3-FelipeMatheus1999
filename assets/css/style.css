@@ -357,14 +357,15 @@ summary {
     height: 500px;
     text-align: center;
     padding: 80px;
+    display: flex;
 }
 
-.secaoContatoul, a, p{
+.secaoContato ul, a, p{
     list-style:none;
     text-decoration: none;
     color: #818181;
-    font-size: 1.2rem;
-    padding: 10px;
+    font-size: 1rem;
+    padding: 8px;
     text-align: left;
     height: 50%;
 }
@@ -377,12 +378,16 @@ summary {
 .flex-col__secaoContato__columnRight h2{
     text-transform: uppercase;
     font-size: 2rem;
+
 }
-.flex-col__secaoContato__columnRight form, label,input{
-    
-    
+.form-input-model > input {
+    width: 100%; 
+    margin: 4px auto;
 }
 
+#form__contact_send{
+    
+}
 /* HEADER */
   
 /* FOOTER */
