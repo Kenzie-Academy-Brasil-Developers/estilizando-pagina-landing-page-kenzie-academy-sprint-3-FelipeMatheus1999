@@ -1,4 +1,3 @@
-
 /*
 Theme Name: Landing Page Kenzie Academy
 Theme URI: https://kenzie.com.br/
@@ -7,7 +6,6 @@ Author URI: https://kenzie.com.br/
 Description: Descrção do thema.
 Version: 1.0
 Text Domain: https://kenzie.com.br/
-
 --------------------------------------------
 ESTRUTURAÇÃO BASE
 --------------------------------------------
@@ -19,7 +17,6 @@ ESTRUTURAÇÃO BASE
 **** PÁGINA INICIAL
 **** EXTRAS
 **** @MEDIA
-
 family=Montserrat -> Menus
 family=Lato -> Títulos, textos
 */
@@ -44,7 +41,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
 }
 
 img{
-    max-width: 340px;
+    max-width: 200px;
 }
 
 figcaption {
@@ -56,16 +53,18 @@ div.full-container{
     max-width: 1850px;
     margin:0 auto;
 }
+
 div.large-container{
     width: 100%;
-    max-width: 1170px;
     margin:0 auto;
-    padding: 15px;
+    padding: 16px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background: #00043e;
 }
+
 div.container{
     width: 100%;
     max-width: 1140px;
@@ -87,52 +86,239 @@ body{
 /* BODY */
 
 /* HEADER */
-header{
-    width: 100%;
-    margin-top: 90px;
-    background: #00043e;  
-}
-
 .logo {
-    width: 17%;
+    width: 60px;
+    z-index: 1;
 }
 
-summary {
-    list-style: none;
+.large-container {
+    margin-top: 100px;
+}
+
+.topo nav ul > label {
+    border: 1px solid #fff;
+    position: absolute;
+    width: 35px;
+    right: 31px;
+    top: 30px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.topo nav ul > label span {
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: block;
+    margin: 5px auto;
+}
+
+.topo label {
+    border: 1px solid #fff;
+    position: relative;
+    width: 35px;
+    right: 15px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.topo label span {
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: block;
+    margin: 5px auto;
+}
+
+#menu {
+    display: none;
+}
+
+nav {
+    background: #00043eee;
+    backdrop-filter: blur(6px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding:80px 10px 10px 0;
+}
+
+nav li {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:focus {
+    background: #020527;
+}
+
+input:checked ~ nav  {
+    display: initial;
 }
 
 .secaoDestaque {
     background: #00043e;
     width: 100%;
-    height: 8%;
+    height: 5%;
     display: flex;
-    justify-content:start;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .secaoDestaque h2 {
     font-family: var(--font-main);
-    color: lightgray;
-    width: 60%;
-    font-size: 2.5rem;
+    color: #fff;
+    width: 80%;
+    font-size: 32px;
     font-weight: 400;
     text-align: center;
-    padding: 10px;
+    margin-top: 10px;
 }
 
-.secaoDestaque.p {
+.secaoDestaque p {
     font-family: var(--font-main);
-    color: lightgray;
-    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0 10px 0;
 }
 
 
 .secaoDestaqueFormulario {
-    margin-top: 20px;
     display: flex;
-    
 }
+
+.secaoDestaqueFormulario input {
+    background: #fff;
+    color: #818181;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+    width: 160px;
+    padding: 10px;
+}
+
+.secaoDestaqueFormulario input:focus {
+    background-color: #e9dcdc;
+} 
+
+.secaoDestaqueFormulario button {
+    background: #007aff;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 95px;
+    height: 30px;
+}
+
+.secaoDestaqueFormulario button:hover {
+    background-color: #00043e;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col--left {   
+    width: 100%;
+    height: 100%;
+    padding: 0px 60px 0 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.flex-col--title {
+    color: #303030;
+    font-family: Lato;
+    font-size: 22px;
+    margin-top: 60px;
+    padding: 40px 10px 0 10px;
+    text-align: start;
+}
+
+.flex-col--left p {
+    color: #303030;
+    font-family: Lato;
+    font-size: 18px;
+    text-align: start;
+    margin: 25px 0 45px 0;
+    padding: 10px;
+}
+
+.flex-col--left span {
+    color: #818181;
+    font-size: 14px;
+    padding:  10px;
+    line-height: 25px;
+    margin: 0 4px 40px 0;
+    padding: 0 0 0 10px;
+    text-align: start;
+}
+
+.flex-col--left button {
+    color: #303030;
+    border:1px solid #ccd2d8;
+    border-radius: 5px;
+    background: #fff;
+    width: 210px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.flex-col--left button:hover {
+    cursor: pointer;
+}
+
+.flex-col--right {
+    margin: 40px 0 120px 0;
+}
+
+.flex-col--left img {
+    width: 50%;
+}
+
+.flex-col--titleJS {
+    color: #303030;
+    font-family: Lato;
+    font-size: 16px;
+    text-align: center;
+}
+
+.flex-col--right ul {
+    color: #808080;
+    font-size: 0.8rem;
+    line-height: 25px;
+    padding: 40px 90px 20px 100px;
+    list-style: initial;
+    text-align: start;
+}
+
 
 .secaoCursos{
     text-align: center;
@@ -175,90 +361,6 @@ summary {
     border-bottom-right-radius: 3px;
     width: 95px;
     height: 30px;
-}
-
-.flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.flex-col {   
-    width: 100%;
-    height: 100%;
-    padding: 0px 60px 40px 60px;
-}
-
-.flex-col--title {
-    color: #303030;
-    font-family: Lato;
-    font-size: 22px;
-    margin-top: 60px;
-    padding: 10px;
-}
-
-.flex-col p {
-    color: #303030;
-    font-family: Lato;
-    font-size: 18px;
-    text-align: start;
-    margin: 25px 0 45px 0;
-    padding: 10px;
-}
-
-.flex-col span {
-    color: #818181;
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 25px;
-    align-self: center;
-}
-
-.flex-col button {
-    color: #303030;
-    border:1px solid #ccd2d8;
-    border-radius: 5px;
-    background: #fff;
-    width: 210px;
-    height: 50px;
-    margin: 40px 0 0 30%;
-    font-size: 16px;
-    padding: 10px;
-}
-
-.flex-col--python {
-    margin: 0 0 120px 0;
-}
-
-.flex-col--JS {
-    text-align: center;
-    width: 100%;
-    background-color: #FAFAFA;
-}
-
-.flex-col--JS img {
-    
-    width: 25%;
-}
-#flex-col-right{
-    background-color: #FAFAFA;
-}
-
-.flex-col-titleJS {
-    color: #303030;
-    font-family: Lato;
-    font-size: 1.5rem;
-    padding: 10px;
-    text-align: center;
-}
-
-.flex-col ul {
-    color: #808080;
-    font-size: 0.8rem;
-    line-height: 25px;
-    padding: 40px 20px 0 50px;
-    list-style: initial;
 }
 
 .secaoCalendar {
@@ -336,7 +438,7 @@ summary {
 }
 
 .calendario-data-rodape span {
-    color: #818181;
+    color: #808080;
     font-size: 2rem;
     font-family: lato;
     margin-bottom: 20px;
@@ -352,6 +454,13 @@ summary {
     margin-bottom: 20px;
     padding: 12px;
 }
+
+.calendario-data-rodape button:hover {
+    background: #00043e;
+    text-transform: uppercase;
+}
+
+
 .secaoContato{
     background-color: #FAFAFA;
     height: 500px;
@@ -359,7 +468,7 @@ summary {
     padding: 80px;
 }
 
-.secaoContatoul, a, p{
+ .contact__paragraph{
     list-style:none;
     text-decoration: none;
     color: #818181;
@@ -409,8 +518,217 @@ main{}
 /* EXTRAS */
   
 
+
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
-    @media screen and (min-width: 800px) {}
-/* MEDIA QUERIES */
+@media screen and (min-width:400px) {
+    .flex-col--left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .flex-col--left button {
+        margin: 0 auto;
+    }
+
+@media screen and (min-width: 800px) { 
+    img {
+        max-width: 500px;
+    }
+
+    .link {
+        color: #fff;
+        letter-spacing: 2px;
+        transition: 0.2s;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav {
+        display: initial;
+    }
+
+    nav {
+        margin-right: 200px;
+        right: 0;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding:0;
+    }
+    
+    nav li {
+        margin-top: 40px;
+    }
+    
+    nav a {
+        font-size: 13px;
+        font-weight: 400;
+    }
+    
+    nav a:hover {
+        color: #020527;
+    }
+
+    
+    .large-container {
+        position: absolute;
+        background: #00043eee;
+        backdrop-filter: blur(6px);
+    }
+
+    .large-container ul {
+        width: 300px;
+        font-size: 13px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secaoDestaque {
+        justify-content: center;
+    }
+
+    .secaoDestaque {
+        background-image: url(../img/background-destaque.webp);
+        height: 19%;
+    }
+
+    .secaoDestaque h2 {
+        font-size: 63px;
+    }
+
+    .secaoDestaque p {
+        font-size: 21px;
+    }
+    
+    .secaoDestaqueFormulario {
+        margin-top: 20px;
+    }
+
+    .secaoDestaque input {
+        width: 460px;
+    }
+
+    .secaoDestaque button {
+        width: 100px;
+        font-size:14px;
+    }
+
+    .secaoSobre h2{
+        font-size: 24px;
+    }
+
+    .flex {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .flex-col--left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .flex-col--titleJS {
+        font-size: 24px;
+    }
+
+    .flex-col--left p {
+        font-size: 19px;
+        padding: 10px;
+    }
+
+    .flex-col--left span {
+        text-align: start;
+        font-size: 15px;
+        padding: 0 0 0 10px;
+    }
+
+    .flex-col--left button {
+        margin: 20px 40px 0 10px;
+    }
+
+    .flex-col--left figure img{
+        width: 50%;
+        display: flex;
+    }
+
+    .flex-col--titleJS {
+        margin-top: 100px;
+    }
+
+    .flex-col--right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .flex-col--right figure img {
+        width: 400px;
+        margin-top: 100px;
+    }
+
+    .secaoCalendar {
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+
+    .calendario {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 auto;
+        max-width: 803px;
+    }
+
+    .calendario span {
+        font-size: 36px;
+    }
+
+    .calendario h3 {
+        font-size: 19px;
+    }
+
+    .calendario p {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .calendario-data-rodape span {
+        font-size: 32px;
+    }
+
+@media screen and (min-width: 1050px) { 
+    .link {
+        color: #fff;
+        letter-spacing: 2px;
+        transition: 0.2s;
+    }
+    
+    .calendario {
+        max-width: 1050px;
+    }
+    
+    .calendario li {
+        width: 300px;
+    }
+    
+    .calendario-data {
+        width: 4.8em;
+    }
+
+    .calendario-data-rodape button {
+        width: 100px;
+    }
+}
