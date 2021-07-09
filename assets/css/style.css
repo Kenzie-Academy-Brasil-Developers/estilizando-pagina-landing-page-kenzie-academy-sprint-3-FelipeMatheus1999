@@ -466,14 +466,15 @@ input:checked ~ nav  {
     height: 500px;
     text-align: center;
     padding: 80px;
+    display: flex;
 }
 
  .contact__paragraph{
     list-style:none;
     text-decoration: none;
     color: #818181;
-    font-size: 1.2rem;
-    padding: 10px;
+    font-size: 1rem;
+    padding: 8px;
     text-align: left;
     height: 50%;
 }
@@ -486,20 +487,79 @@ input:checked ~ nav  {
 .flex-col__secaoContato__columnRight h2{
     text-transform: uppercase;
     font-size: 2rem;
+
 }
-.flex-col__secaoContato__columnRight form, label,input{
-    
-    
+.form-input-model > input {
+    width: 100%; 
+    margin-top: 1rem;
+    padding: 6px;
+}
+#secaoContato__contact{
+    padding-bottom: 1.7rem;
 }
 
+#mensagem{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 8px;
+}
+
+#form__contact__send{
+    text-align: end;
+}
+#form__contact__send > input{
+    font-size: 1rem;
+    background-color: #FAFAFA;
+    border: 1px solid gray;
+    padding: 4px;
+    margin-top: 1rem;
+}
+#secaoContato__description{
+    text-align: left;
+    margin-top: 5px;
+    color:#808080;
+}
+#secaoContato-informacoes>p{
+    color:#808080;
+    text-align: left;
+}
+#secaoContato__description>li>a{
+    text-decoration: none;
+    padding: 5px;
+    color:#808080;
+}
 /* HEADER */
   
 /* FOOTER */
-footer{}
+footer{
+    margin-top: 3rem;
+    display: flex;
+    align-self: center;
+    color:#808080;
+}
+
+footer>p{
+    padding-top: 5rem;
+    height: 200px;
+    display: none;
+}
+
+#footer__anchor{
+    color: #007aff;
+    height: 20px;
+    width: 20px;
+    size: 30px;
+    padding:10px;
+}
+#footer__anchor:hover{
+    cursor: pointer;
+    color: #479ffd;
+    size:30px;
+}
 /* FOOTER */
 
 /* INICIAL */
-main{}
+
 
 
 /* INICIAL */
@@ -532,6 +592,7 @@ main{}
     .flex-col--left button {
         margin: 0 auto;
     }
+}
 
 @media screen and (min-width: 800px) { 
     img {
@@ -638,7 +699,6 @@ main{}
         flex-direction: column;
         align-items: flex-start;
     }
-
     .flex-col--titleJS {
         font-size: 24px;
     }
@@ -675,7 +735,7 @@ main{}
     }
     
     .flex-col--right figure img {
-        width: 400px;
+        width: 100%;
         margin-top: 100px;
     }
 
@@ -708,6 +768,53 @@ main{}
     .calendario-data-rodape span {
         font-size: 32px;
     }
+
+    .secaoCursos{
+        width: 100%;
+    
+    }
+    .secaoCursos__article>h2{
+        text-align: center;
+    }
+    .secaoCursos__subTitle{
+        font-size:19px;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+    .secaoCursos>h3{
+        font-size:19px;
+    }
+    .secaoCursos__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    align-content: space-between;
+    margin-bottom: 60px;
+    }
+    .secaoCursos__list>li{
+        width: 33%;
+    }
+    #secaoContato__contact{
+        text-align: center;
+    }
+    .secaoContato{
+        background-color: #FAFAFA;
+    height: 500px;
+    text-align: center;
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 0 0 50%;
+    }
+    .secaoContato-informacoes{
+        font-size:15px;
+    }
+    footer{
+        margin-top: 28vh;
+    }
+}
 
 @media screen and (min-width: 1050px) { 
     .link {
