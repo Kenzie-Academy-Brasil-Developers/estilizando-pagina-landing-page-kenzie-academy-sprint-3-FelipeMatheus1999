@@ -72,9 +72,9 @@ div.container{
 }
 /* GERAL */
 
-/* HTML */
+/* HTML
 html{}
-/* HTML */
+HTML */
 
 /* BODY */
 body{
@@ -585,7 +585,7 @@ footer{
 
 /* EXTRAS */
 
-/* para estilizar a scrollbar */
+/* para estilizar a scrollbar
 ::-webkit-scrollbar{}
 ::-webkit-scrollbar-button{}
 ::-webkit-scrollbar-track{}
@@ -593,8 +593,7 @@ footer{
 ::-webkit-scrollbar-thumb{}
 ::-webkit-scrollbar-corner{}
 ::-webkit-resizer{}
-
-/* EXTRAS */
+EXTRAS */
   
 
 
@@ -611,7 +610,7 @@ footer{
     .flex-col--left button {
         margin: 0 auto;
     }
-
+}
 
 @media screen and (min-width: 800px) { 
     img {
@@ -848,6 +847,7 @@ footer{
 }
 
 @media screen and (min-width: 1050px) { 
+
     .link {
         color: #fff;
         letter-spacing: 2px;
