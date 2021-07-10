@@ -180,9 +180,22 @@ input:checked ~ nav  {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 10rem
 }
-
+.secaoDestaque__container{
+    width: 100%;
+    height: 280px;
+    max-width: 1080px;
+    padding: 40px;
+}
+.secaoDestaque__title{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+}
 .secaoDestaque h2 {
     font-family: var(--font-main);
     color: #fff;
@@ -203,6 +216,11 @@ input:checked ~ nav  {
 
 .secaoDestaqueFormulario {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .secaoDestaqueFormulario input {
@@ -501,9 +519,6 @@ input:checked ~ nav  {
 #secaoContato__contact{
     padding: 40px;
 }
-
-.flex__secaoContato__divContainer>#secaoContato__contact{order:1;}
-.flex__secaoContato__divContainer>.flex-col__secaoContato__columnLeft{order:2;}
 #mensagem{
     width: 100%;
     margin-top: 1rem;
@@ -641,7 +656,10 @@ footer{
     nav a:hover {
         color: #020527;
     }
-
+    .secaoDestaque__container{
+        height: 500px;
+        margin-top: 125px;
+    }
     
     .large-container {
         position: absolute;
@@ -801,7 +819,7 @@ footer{
     }
     .flex__secaoContato__divContainer{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: space-around;
@@ -821,8 +839,8 @@ footer{
         width: 32vw;
         display: inline-block;  
     }
-    .secaoCon__contact{
-
+    #secaoContato__contact{
+        padding-left:19rem;
     }
     .footer__kenzieLink{
         display:initial;
