@@ -20,6 +20,7 @@
         <figcaption>Kenzie Academy</figcaption>  
       </figure>
 
+
       <!-- MENU DE NAVEGAÇÃO -->
       <input type="checkbox" id="menu">
         <label for="menu">
@@ -65,7 +66,7 @@
     </section>
 
     <!-- SEÇÃO SOBRE -->
-    <section class="secaoSobre">
+    <section class="secaoSobre" id="1">
 
       <article class="flex">
         
@@ -93,7 +94,7 @@
         </div>
 
         <!-- COLUNA ESQUERDA -->
-        <div class="flex-col--left">
+        <div id="flex-col--left__JS" class="flex-col--left">
 
             <figure>
               <img src="assets/img/JavaScript-logo.png" alt="Java Script">
@@ -128,7 +129,7 @@
         <p class="secaoCursos__subTitle">What we offer</p>
 
         <!-- LISTA DE CURSOS -->
-        <ul>
+        <ul class="secaoCursos__list">
         
           <li>
             <img src="assets/img/html-css.png" alt="">
@@ -172,7 +173,7 @@
 
     </section>
 
-    <section class="secaoCalendar">
+    <section class="secaoCalendar" id="2">
 
       <h2>SCHEDULE</h2>
       <p class="secaoCalendarParagraph">Lorem ipsum dolor sit schedule</p>
@@ -214,18 +215,18 @@
 
     </section>
 
-    <section class="secaoContato">
+    <section class="secaoContato" id="3" >
 
       <div class="flex__secaoContato__divContainer">
 
         <!-- COLUNA LADO ESQUERDO -->
         <div class="flex-col__secaoContato__columnLeft">
+          <h2 id="secaoContato__contact">Contact</h2>
           
-          <div class="secaoContato-informacoes">
-          
+          <div class="secaoContato-informacoes" id="secaoContato-informacoes">
             <p>Contact us and we'll get back to you within 24 hours.</p>
             
-            <ul>
+            <ul id="secaoContato__description">
               <li>
                 <i class="fas fa-map-marker-alt"></i>
                 <a href="#">Chicago, US</a>
@@ -244,28 +245,30 @@
 
         <!-- COLUNA LADO DIRETO -->
         <div class="flex-col__secaoContato__columnRight">
-          
-          <h2>Contact</h2>
-          
+                    
           <form action="">
 
-            <div class="form-input-model">
-              <label for="nome"></label>
-              <input type="text" placeholder="Name" id="nome" name="nome">
+            <div class="form-name-email">  
+                          
+              <div class="form-input-model">
+                <label for="nome"></label>
+                <input type="text" placeholder="Name" id="nome" name="nome">
+              </div>
+
+              <div class="form-input-model">
+                <label for="email"></label>
+                <input type="text" placeholder="E-mail" id="email" name="email">
+              </div>
             </div>
 
-            <div class="form-input-model">
-              <label for="email"></label>
-              <input type="text" placeholder="E-mail" id="email" name="email">
-            </div>
 
             <div class="form-input-model">
               <label for="mensagem"></label>
-              <textarea type="text" placeholder="Comment" name="mensagem" id="mensagem" rows="6" cols="40" ></textarea>
+              <textarea type="text" placeholder="Comment" name="mensagem" id="mensagem" rows="6" cols="34" ></textarea>
             </div>
-
+            <div id="form__contact__send">
             <input type="submit" value="Send">
-
+            </div>
           </form>
 
         </div>
@@ -277,7 +280,10 @@
   </main>
 
   <footer>
-    <p>Kenzie Academy - <a href="kenzie.com.br">kenzie.com.br</a></p>
+    <i class="fas fa-angle-up" id="footer__anchor" onclick="topFunction()"></i>
+    <p>
+      Kenzie Academy - <a href="kenzie.com.br">kenzie.com.br</a>
+    </p>
   </footer>
 
   <script src="assets/js/script.js"></script>
