@@ -624,6 +624,10 @@ footer{
         transition: 0.2s;
     }
 
+    header figure {
+        margin-left: 10%;
+    }
+
     label {
         display: none;
     }
@@ -633,7 +637,7 @@ footer{
     }
 
     nav {
-        margin-right: 200px;
+        margin-right: 20%;
         right: 0;
     }
     
@@ -662,7 +666,8 @@ footer{
     }
     
     .large-container {
-        position: absolute;
+        display: flex;
+        justify-content: space-around;
         background: #00043eee;
         backdrop-filter: blur(6px);
     }
@@ -795,17 +800,21 @@ footer{
         width: 100%;
     
     }
+    
     .secaoCursos__article>h2{
         text-align: center;
     }
+
     .secaoCursos__subTitle{
         font-size:19px;
         font-weight: bold;
         margin-bottom: 50px;
     }
+
     .secaoCursos>h3{
         font-size:19px;
     }
+
     .secaoCursos__list{
     display: flex;
     flex-direction: row;
@@ -817,6 +826,7 @@ footer{
     .secaoCursos__list>li{
         width: 33%;
     }
+
     .flex__secaoContato__divContainer{
     display: flex;
     flex-direction: row;

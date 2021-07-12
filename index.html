@@ -23,6 +23,7 @@
         <figcaption>Kenzie Academy</figcaption>
       </figure>
 
+
       <!-- MENU DE NAVEGAÇÃO -->
       <input type="checkbox" id="menu">
       <label for="menu">
@@ -69,7 +70,7 @@
     </section>
 
     <!-- SEÇÃO SOBRE -->
-    <section class="secaoSobre">
+    <section class="secaoSobre" id="1">
 
       <article class="flex">
 
@@ -179,7 +180,7 @@
 
     </section>
 
-    <section class="secaoCalendar">
+    <section class="secaoCalendar" id="2">
 
       <h2>SCHEDULE</h2>
       <p class="secaoCalendarParagraph">Lorem ipsum dolor sit schedule</p>
@@ -227,10 +228,11 @@
 
     </section>
 
-    <section class="secaoContato">
+    <section class="secaoContato" id="3">
       <div class="secaoContato__contact">
         <h2 id="secaoContato__contact">Contact</h2>
       </div>
+
       <div class="flex__secaoContato__divContainer">
 
         <!-- COLUNA LADO ESQUERDO -->
@@ -262,15 +264,19 @@
 
           <form class="flex-col__secaoContato__form" action="">
 
-            <div class="form-input-model">
-              <label for="nome"></label>
-              <input type="text" placeholder="Name" id="nome" name="nome">
+            <div class="form-name-email">  
+                          
+              <div class="form-input-model">
+                <label for="nome"></label>
+                <input type="text" placeholder="Name" id="nome" name="nome">
+              </div>
+
+              <div class="form-input-model">
+                <label for="email"></label>
+                <input type="text" placeholder="E-mail" id="email" name="email">
+              </div>
             </div>
 
-            <div class="form-input-model">
-              <label for="email"></label>
-              <input type="text" placeholder="E-mail" id="email" name="email">
-            </div>
 
             <div class="form-input-model">
               <label for="mensagem"></label>
