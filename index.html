@@ -215,17 +215,19 @@
 
     </section>
 
-    <section class="secaoContato" id="3" >
-
+    <section class="secaoContato" id="3">
+      <div class="secaoContato__contact">
+        <h2 id="secaoContato__contact">Contact</h2>
+      </div>
       <div class="flex__secaoContato__divContainer">
 
         <!-- COLUNA LADO ESQUERDO -->
         <div class="flex-col__secaoContato__columnLeft">
-          <h2 id="secaoContato__contact">Contact</h2>
-          
+
+
           <div class="secaoContato-informacoes" id="secaoContato-informacoes">
             <p>Contact us and we'll get back to you within 24 hours.</p>
-            
+
             <ul id="secaoContato__description">
               <li>
                 <i class="fas fa-map-marker-alt"></i>
@@ -245,29 +247,25 @@
 
         <!-- COLUNA LADO DIRETO -->
         <div class="flex-col__secaoContato__columnRight">
-                    
-          <form action="">
 
-            <div class="form-name-email">  
-                          
-              <div class="form-input-model">
-                <label for="nome"></label>
-                <input type="text" placeholder="Name" id="nome" name="nome">
-              </div>
+          <form class="flex-col__secaoContato__form" action="">
 
-              <div class="form-input-model">
-                <label for="email"></label>
-                <input type="text" placeholder="E-mail" id="email" name="email">
-              </div>
+            <div class="form-input-model">
+              <label for="nome"></label>
+              <input type="text" placeholder="Name" id="nome" name="nome">
             </div>
 
+            <div class="form-input-model">
+              <label for="email"></label>
+              <input type="text" placeholder="E-mail" id="email" name="email">
+            </div>
 
             <div class="form-input-model">
               <label for="mensagem"></label>
-              <textarea type="text" placeholder="Comment" name="mensagem" id="mensagem" rows="6" cols="34" ></textarea>
+              <textarea type="text" placeholder="Comment" name="mensagem" id="mensagem" rows="6" cols="34"></textarea>
             </div>
             <div id="form__contact__send">
-            <input type="submit" value="Send">
+              <input type="submit" value="Send">
             </div>
           </form>
 
@@ -281,13 +279,14 @@
 
   <footer>
     <i class="fas fa-angle-up" id="footer__anchor" onclick="topFunction()"></i>
-    <p>
+    <p class="footer__kenzieLink">
       Kenzie Academy - <a href="kenzie.com.br">kenzie.com.br</a>
     </p>
   </footer>
 
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>
 
 
