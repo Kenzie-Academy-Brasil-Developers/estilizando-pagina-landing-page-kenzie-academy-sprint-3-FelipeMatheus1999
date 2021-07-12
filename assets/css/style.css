@@ -181,12 +181,14 @@ input:checked ~ nav  {
     flex-direction: column;
     align-items: center;
 }
+
 .secaoDestaque__container{
     width: 100%;
     height: 280px;
     max-width: 1080px;
-    padding: 40px;
+    padding: 20px;
 }
+
 .secaoDestaque__title{
     display: flex;
     flex-direction: column;
@@ -211,6 +213,7 @@ input:checked ~ nav  {
     color: #fff;
     font-size: 20px;
     margin: 10px 0 10px 0;
+
 }
 
 
@@ -660,6 +663,7 @@ footer{
     nav a:hover {
         color: #020527;
     }
+    
     .secaoDestaque__container{
         height: 500px;
         margin-top: 125px;
@@ -826,7 +830,10 @@ footer{
     .secaoCursos__list>li{
         width: 33%;
     }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 98e59485a313be1fe80a973b8a8263b40db6322a
     .flex__secaoContato__divContainer{
     display: flex;
     flex-direction: row;
